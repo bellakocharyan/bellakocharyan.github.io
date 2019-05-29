@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+header {
+	background: #000;
+	box-shadow: 0px 1px 4px 0px rgb(51, 71, 91);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 90%;
+	transition: all 5s cubic-bezier(.22,.97,.22,.97);
+}
+header h1 {
+	display: inline-flex;
+	padding: 10px 20px;
+	color: #fff;
+	font-family: gloria-hallelujah,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+.page-section {
+	padding: 100px 100px 30px;
+}
+.avatar-container {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+}
+.avatar {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.about-me{
+	padding: 0px 100px 20px;
+}
+h2 {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	font-family: gloria-hallelujah,sans-serif;
+font-weight: 400;
+font-style: normal;
+	
+}
+.arrow-section{
+	display: flex;
+	justify-content: center;
+
+}
+.arrow{
+	padding-top: 0;
+	width: 70%;
+	height: 25px;
+}
+.main-table {
+	padding: 0px 20px;
+	display: flex;
+	justify-content: center;
+}
+table table td{
+	padding: 10px;
+}
+table td {
+	padding: 10px 100px;
+}
+table img {
+ overflow: hidden;
+ width: 64px;
+ height: 64px;
+ transition: all 0.1s;
+ box-shadow: 0px, 0px, 2px, 0px color: #000;
+}
+table img:hover{
+ transform: scale(1.1);
+}
+ol li{
+	list-style-type: disc;
+}
+.footer {
+	padding: 10px 30px 30px;
+	border-top: inset;
+	border-color: #000;
+	border-top-width: 1px;
+}
+footer span{
+	display: flex;
+	justify-content: flex-end;
+}
+footer img {
+	padding: 10px;
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+}
+h3{
+	color: #000;
+	font-family: gloria-hallelujah,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+div p{
+	text-indent: 30px;
+}
