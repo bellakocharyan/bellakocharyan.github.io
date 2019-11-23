@@ -1,82 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Bella Kocharyan</title>
-	<link rel="stylesheet" href="./styles.css">
-	<link rel="stylesheet" href="https://use.typekit.net/ejj0fml.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/56db36a896.js"></script>
+    <title>Portfolio</title>
 </head>
 <body>
-	<section>
-		<header id="header">
-			<h1 id = "title"></h1>
-			<script src="./script.js"></script>
-			
-			
-		</header>
-	</section>
-	<section class="page-section">
-		<div class = "avatar-container">
-			<img class = "avatar" src="./images/23755378.jpg" alt="avatar">
-		</div>
-	</section>
-	<section class="about-me">
-		<h2>About me</h2>
-		<div>
-		 <p>Hi everyone. I'm Bella from wonderful city Yerevan in Armenia. After graduating with a Bachelor’s Degree in engineering the field of “Software for Computers and Automated Systems”, State Engineering University of Armenia in 2007 I spent last 10 years making my own business. But I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be thought, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter. That's why I'm here as a beginner. </p> 
-		 <p>  I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
-</div>
-	</section>
-	<div class = "arrow-section">
-	<img class = "arrow" src="./images/arrow.jpg" alt="line">
-</div>
-	<table class="main-table">
-		<td>
-			<h2>My skills</h2>
-				<table class="table">
-					<td>
-					<img src="./images/html.png" alt="HTML5 " title="HTML5">
-				</td>
-				<td>
-					<img src="./images/css.png" alt="CSS3" title="CSS3">
-				</td>
-				<td>
-					<img src="./images/js.png" alt="JavaScript" title="JavaScript">
-				</td>
-				<td>
-					<img src="./images/photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop">
-				</td>
-				</table>
+    <section >
+      <header>
+        <div class="menu-toggler">
+            <div class="bar start"></div>
+            <div class="bar"></div>
+            <div class="bar end"></div>
+        </div>
+          <nav class="nav-bar">
+              <ul class="nav-list">
+                 <li><a href="index.html" class="nav-link">Home</a></li> 
+                 <li><a href="#about" class="nav-link">About</a></li>
+                 <li><a href="#skills" class="nav-link">Skills</a></li> 
+                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li> 
+                 <li><a href="#contact" class="nav-link">Contact</a></li>  
+              </ul>
+          </nav>
+          <div class="main-info">
+              <h1 id="my-name">Bella <br> Kocharyan</h1>
+              <h6 id='prof'>Web Developer</h6>
+          </div>
+      </header>
+    </section>
 
-		</td>
-		<td>
-			<h2>Services</h2>
-			<ol></ol>
-				<li>Web Development</li>
-			 	<li>Website Creation</li>
-				<li>Custom Logo Design</li>
-				
-			</ol>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="./images/P_20190818_164823_BF_p.jpg" alt="avatar">
+            </div>
+            <div class="about-me" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-details">
+                    <h1>About Me</h1>
+                </div>
+                <p>  Hi everyone. I'm Bella from Yerevan, Armenia. After graduating with a Bachelor’s Degree in engineering
+                 the field of “Software for Computers and Automated Systems”, State Engineering University of Armenia in 2007 I spent
+                 last 10 years working in different directions. But I don’t like to define myself by the work I’ve done. I define myself by the
+                 work I want to do. Skills can be thought, personality is inherent. I prefer to keep learning, continue challenging myself
+                 and do interesting things that matter. That's why I'm here as a beginner. </p> 
+                <p>  I'm quietly confident, naturally curious and perpetually working on improving my chops one problem at a time.</p> 
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://github.com/bellakocharyan" target="_blanck" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.facebook.com/bella.kocharyan" target="_blanck" class="icon-link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bellakocharyan1/" target="_blanck" class="icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="mailto:bellak1985@gmail.com" target="_blanck" class="icon-link" title="bellak1985@gmail.com">
+                                    <i class="fas fa-envelope-square"></i>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>   
+            </div>
+            
+        </div>
+    </section>
 
-		</td>
-		
-	</table>
-	
-	<footer class="footer">
-		<h3>Contacts</h3>
-		<div>
-			tel. +37494190402<br>
-			<a href="mailto:bellak1985@gmail.com"> email: bellak1985@gmail.com<br>
-			</a>
-			<a  href="https://web.facebook.com/bella.kocharyan" target="_blanck"> <img src="./images/facebook-logo.png" alt="Facebook"></a>
-			<a href="https://www.instagram.com/bellakocharyan1/" target="_blanck"> <img src="./images/insta.png" alt="Instagram"></a>
+    <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Skills</h1>
+                    <h6>What I can do for you</h6>
+                </div>
+            <div class="my-skills">
+               <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                 <div class="icon-container">
+                     <i class="fas fa-code"></i>
+                 </div>
+                 <h1>Web Development</h1> 
+                 <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>FireBase</li>
+                 </ul>
+               </div> 
+               <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h1>Tools</h1> 
+                    <ul>
+                        <li>Git</li>
+                        
+                    </ul>
+                  </div> 
+                  <div class="skill" data-aos="fade-in" data-aos-delay="900">
+                        <div class="icon-container">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h1>Languages</h1> 
+                        <ul>
+                            <li>Armenian - Native</li>
+                            <li>English - Fluent</li>
+                            <li>Russian - Fluent</li>
+                       </ul> 
+                      </div> 
+                </div>    
+            </div>
+    </section>
+    <section class="Portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Portfolio</h1>
+                    <h6>Some of my recent work</h6>
+                </div>
+                <div class="portfolio-item">
+                     
+                    <div class="portfolio-img" data-aos="fade-right" data-aos-delay="300">
+                        <img src="./images/memory_game.png" alt="screenshot">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>Web Development</h6>
+                        <h1>Memory Game</h1>
+                        <p>Simple Memory game App, with one card flip using JavaScript Vanilla, CSS, and HTML</p>
+                        <a href="https://bellakocharyan.github.io/project/memory%20game/" target="_blank" class="veiw-details">View Details</a><br/>
+                        <a href="https://github.com/bellakocharyan/project/tree/master/memory%20game" target="_blank" class="veiw-details">Code source</a>
+                    </div>
+                   
+                </div>
+                <div class="portfolio-item">
+                        <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+                                <h6>Web Development</h6>
+                                <h1>Stopwatch</h1>
+                                <p>React Stopwatch App, useing Hooks</p>
+                                <a href="https://codesandbox.io/s/stopwatch-react-ybgxh" target="_blank" class="veiw-details">View Details</a>
+                            </div>
+                        <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                            <img src="./images/stopWatch.png" alt="screenshot">
+                        </div>
+                        
+                </div>
+                <div class="portfolio-item">
+                     
+                    <div class="portfolio-img" data-aos="fade-right" data-aos-delay="300">
+                        <img src="./images/books-garden.png" alt="screenshot">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>Web Development</h6>
+                        <h1>Books Garden online shop</h1>
+                        <p>This one is React online shop App, it's a team project. The shop has one user as admin and
+                            my work was written a code that will let him put new books on site which save in FireBase. Also
+                            for easy using books array from FireStore I wrote a custom hook and all actions with books as categories
+                            and search made by me using custom hook. Also I made a basket.
+                             </p>
+                        <a href="https://books-garden.netlify.com/" target="_blank" class="veiw-details">View Details</a><br/>
+                        <a href="https://github.com/bellakocharyan/Team-Project" target="_blank" class="veiw-details">Code source</a>
+                    </div>
+                   
+                </div>
+            </div>
+    </section>
+    <section class="Contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Contact</h1>
+                    <h6>Feel free to connect me</h6>
+                </div>
+                <form  action="https://formspree.io/bellak1985@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="300">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    <label for="subject">Subject:</label>
+                    <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </section>
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+           
+        </div>
+        <p> Bella Kocharyan &copy 2019 </p>
+    </footer>
 
-		</div>
-		<span> Bella Kocharyan © 2019</span>
-
-		
-	</footer>
+    <script src="script.js"></script>
+   
 </body>
 </html>

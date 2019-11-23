@@ -1,22 +1,26 @@
-const header = document.querySelector(`#header`);
-header.style.background = `white`;
-header.style.width = `initial`;
-setTimeout(() => {header.style.background = `black`}, 2000);
+let menu = document.querySelector(`.menu-toggler`);
+let navBar = document.querySelector(`.nav-bar`);
+let myProf = document.querySelector(`#prof`);
+let navList = document.querySelector(`.nav-list`);
+let navLink = document.querySelectorAll(`.nav-link`);
+let up = document.querySelector(`.up`);
 
-const title = document.querySelector(`#title`);
-title.style.color = `black`;
-title.style.width = `initial`;
-setTimeout(() => {title.style.color = `white`}, 2000);
+menu.addEventListener(`click`, () =>{
+menu.classList.toggle(`open`);
+navBar.classList.toggle(`open`);
 
-const text = `Bella Kocharyan`;
-let i = 0;
-function typeText(){
-	if ( i < text.length){
-	title.textContent += text.charAt(i) ;
-	i++;
-}
-	setTimeout(typeText, 120);
-		
-}
-typeText();
+});
+navList.addEventListener(`click`, () =>{
+	menu.classList.remove(`open`);
+	navBar.classList.remove(`open`);
+});
+
+up.addEventListener(`click`, () =>{
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0;
+});
+AOS.init({
+	duration: 1500,
+	once: true
+  });
 
